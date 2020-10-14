@@ -1,15 +1,9 @@
-$primary-color: #411;
-$secondary-color: #eece1a;
-$show-home-image: true;
-$home-image: url();
-
-@mixin easeOut {
-  transition: all 0.5s ease-in-out;
-}
+@import 'config';
 * {
   box-sizing: border-box;
 }
 body {
+  @include background();
   background: $primary-color;
   color: #fff;
   height: 100%;
